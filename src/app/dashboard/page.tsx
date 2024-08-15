@@ -1,7 +1,7 @@
 export default function App() {
   return (
     <main>
-      <p>App page</p>
+      <p>App push</p>
     </main>
   )
 }
