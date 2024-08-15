@@ -8,38 +8,37 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { SubscriptionDialog } from '@/components/subscription-dialog'
 
-export const speakers = [
-  {
-    name: 'Bárbara Romano',
-    description: 'Mestre em Prótese Dentária.',
-    src: './barbara.jpg',
-    curriculum:
-      'Mestranda em Prótese Dentária. Possui especialização também em Prótese Dentária e graduação em Odontologia pela Universidade Santa Cecília (2017), ganhadora do Prêmio de Melhor aluna da Turma XVII e Prêmio Lima de Ouro da Disciplina de Endodontia nos anos de 2016 e 2017. Atualmente é professora na graduação em Odontologia da Universidade Anhanguera de Jundiaí e ministra cursos de pós graduação com foco em Prótese Dentária. Atua em consultório odontológico próprio, em experiência na área de Odontologia, com ênfase em Prótese Dentária. Fundadora da comunidade Domine Prótese.',
-  },
-  {
-    name: 'Willian Gomes',
-    description: 'Odontologia Estética',
-    src: './willian.jpg',
-    curriculum:
-      'Mais de 20 anos de Odontologia Estética - tendo iniciado como Protético no ano de 1998 Fundador da Imersão e Mentoria SMILE SCULPTOR e RESIN SCULPTOR @cursosmilesculptor_ Especialista em Reabilitação Oral e Estética (Prótese, Implante e Cirurgia  Periodontal) - Faculdade São Leopoldo Mandic - 2024 Graduado em Odontologia- Universidade Santa Cecília - 2018 Fundador do Laboratório Axial @lab.axial Fundador da clínica Spazio Riso @spazio_riso',
-  },
-  {
-    name: 'Bruno Montezano',
-    description: 'Dentista, Gestor e Professor,',
-    src: './bruno.jpg',
-    curriculum:
-      'Sou dentista, gestor e professor, apaixonado por gestão. Há mais de 3 anos tenho uma atuação focada em precificação de serviços odontológicos. Ao longo dos últimos anos, tive o privilégio de trabalhar em diversos ramos da Odontologia, passando por vários setores, tendo uma visão 360º do mercado odontológico. A partir disso criei o método  C.O.G.I.D.I, o qual hoje consigo ajudar diversas clínicas odontológicas a alcançarem seu potencial máximo. Meu objetivo é impulsionar seu crescimento e sucesso, fornecendo estratégias sólidas, otimização de precificação e uma visão abrangente do mercado odontológico.',
-  },
-  {
-    name: 'Nohana',
-    description: 'Sensodyne',
-    src: './nohana.jpg',
-    curriculum:
-      'Graduada em Farmácia pela Universidade Federal Rural do Rio de Janeiro Possui 5 anos de experiência no ramo da odontologia na aréa de Propaganda na multinacional GSK. Atualmente trabalha na Haleon focada em treinamentos nas Universidades do RJ, SP e BH com as marcas Sensodyne e Corega',
-  },
-]
-
 export default function Home() {
+  const speakers = [
+    {
+      name: 'Bárbara Romano',
+      description: 'Mestre em Prótese Dentária.',
+      src: './barbara.jpg',
+      curriculum:
+        'Mestranda em Prótese Dentária. Possui especialização também em Prótese Dentária e graduação em Odontologia pela Universidade Santa Cecília (2017), ganhadora do Prêmio de Melhor aluna da Turma XVII e Prêmio Lima de Ouro da Disciplina de Endodontia nos anos de 2016 e 2017. Atualmente é professora na graduação em Odontologia da Universidade Anhanguera de Jundiaí e ministra cursos de pós graduação com foco em Prótese Dentária. Atua em consultório odontológico próprio, em experiência na área de Odontologia, com ênfase em Prótese Dentária. Fundadora da comunidade Domine Prótese.',
+    },
+    {
+      name: 'Willian Gomes',
+      description: 'Odontologia Estética',
+      src: './willian.jpg',
+      curriculum:
+        'Mais de 20 anos de Odontologia Estética - tendo iniciado como Protético no ano de 1998 Fundador da Imersão e Mentoria SMILE SCULPTOR e RESIN SCULPTOR @cursosmilesculptor_ Especialista em Reabilitação Oral e Estética (Prótese, Implante e Cirurgia  Periodontal) - Faculdade São Leopoldo Mandic - 2024 Graduado em Odontologia- Universidade Santa Cecília - 2018 Fundador do Laboratório Axial @lab.axial Fundador da clínica Spazio Riso @spazio_riso',
+    },
+    {
+      name: 'Bruno Montezano',
+      description: 'Dentista, Gestor e Professor,',
+      src: './bruno.jpg',
+      curriculum:
+        'Sou dentista, gestor e professor, apaixonado por gestão. Há mais de 3 anos tenho uma atuação focada em precificação de serviços odontológicos. Ao longo dos últimos anos, tive o privilégio de trabalhar em diversos ramos da Odontologia, passando por vários setores, tendo uma visão 360º do mercado odontológico. A partir disso criei o método  C.O.G.I.D.I, o qual hoje consigo ajudar diversas clínicas odontológicas a alcançarem seu potencial máximo. Meu objetivo é impulsionar seu crescimento e sucesso, fornecendo estratégias sólidas, otimização de precificação e uma visão abrangente do mercado odontológico.',
+    },
+    {
+      name: 'Nohana',
+      description: 'Sensodyne',
+      src: './nohana.jpg',
+      curriculum:
+        'Graduada em Farmácia pela Universidade Federal Rural do Rio de Janeiro Possui 5 anos de experiência no ramo da odontologia na aréa de Propaganda na multinacional GSK. Atualmente trabalha na Haleon focada em treinamentos nas Universidades do RJ, SP e BH com as marcas Sensodyne e Corega',
+    },
+  ]
   return (
     <main className="w-screen flex justify-center">
       <div className="w-full px-2 break-words space-y-6 py-4">
