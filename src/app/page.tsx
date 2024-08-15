@@ -6,6 +6,7 @@ import { Card } from '@/components/ui/card'
 import { Calendar, Instagram, MapPin } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { SubscriptionDialog } from '@/components/subscription-dialog'
 
 export const speakers = [
   {
@@ -64,7 +65,7 @@ export default function Home() {
             </span>
           </div>
           <div>
-            <Button>Realizar inscrição</Button>
+            <SubscriptionDialog />
           </div>
         </Card>
         <Card className="space-y-2 p-6 text-center w-full">
