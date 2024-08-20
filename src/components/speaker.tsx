@@ -7,6 +7,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from './ui/dialog'
+import { ScrollArea } from './ui/scroll-area'
 
 interface SpeakerProps {
   name: string
@@ -25,19 +26,21 @@ export function Speaker({ name, description, src, curriculum }: SpeakerProps) {
         <p>{name}</p>
       </DialogTrigger>
 
-      <DialogContent className="max-w-[350px] rounded-md">
+      <DialogContent className="max-w-[350px] rounded-md h-4/5">
         <DialogHeader className="space-y-4 items-center">
           <Avatar className="size-32">
             <AvatarImage src={src} className="bg-cover" alt="@shadcn" />
             <AvatarFallback />
           </Avatar>
+
           <div className="text-center">
             <DialogTitle>{name}</DialogTitle>
             <DialogDescription>{description}</DialogDescription>
           </div>
         </DialogHeader>
-
-        <p>{curriculum}</p>
+        <ScrollArea>
+          <p>{curriculum}</p>
+        </ScrollArea>
       </DialogContent>
     </Dialog>
   )

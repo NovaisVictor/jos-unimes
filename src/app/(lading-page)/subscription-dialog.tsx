@@ -44,7 +44,7 @@ export function SubscriptionDialog() {
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
           <DialogTitle>Inscreva-se</DialogTitle>
-          <DialogDescription>a</DialogDescription>
+          <DialogDescription>Insira seus dados</DialogDescription>
         </DialogHeader>
         <form onSubmit={handleSubmit}>
           <div className="grid gap-4 py-4">
