@@ -6,7 +6,7 @@ import { Card } from '@/components/ui/card'
 import { Calendar, Instagram, MapPin } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { SubscriptionDialog } from '@/components/subscription-dialog'
+import { SubscriptionDialog } from './subscription-dialog'
 
 export default function Home() {
   const speakers = [
@@ -38,9 +38,16 @@ export default function Home() {
       curriculum:
         'Graduada em Farmácia pela Universidade Federal Rural do Rio de Janeiro Possui 5 anos de experiência no ramo da odontologia na aréa de Propaganda na multinacional GSK. Atualmente trabalha na Haleon focada em treinamentos nas Universidades do RJ, SP e BH com as marcas Sensodyne e Corega',
     },
+    {
+      name: 'Yuri Kalinin',
+      description: 'Secretário Adjunto',
+      src: './yuri.jpeg',
+      curriculum:
+        'Desde abril de 2024 atua como Secretário Adjunto da Secretaria de Saúde Pública de Praia Grande. Anteriormente, atuou como Secretário Adjunto da Subsecretaria de Atenção à Saúde entre junho de 2022 e abril de 2024. Cirurgião-dentista e estomatologista da Prefeitura de Praia Grande desde 2016, graduou-se em Odontologia pela Universidade Metodista de São Paulo em 2013, especialista em Estomatologia pelo Hospital Heliópolis (2016-2018), possui habilitação em Laserterapia pelo LELO-FOUSP (2022). Em 2024, tornou-se especialista em Gestão Pública em Saúde (Unicamp) e atualmente é pós-graduando em Saúde Pública pela Faculdade de Saúde Pública da USP (2024-2026). Membro ativo da Sociedade Brasileira de Estomatologia e Patologia Oral (SOBEP), integra a Câmara Técnica de Estomatologia e a Comissão de Políticas Públicas do CROSP. Também é membro do Grupo de Trabalho de Câncer da Coordenação-Geral de Saúde Bucal do Ministério da Saúde.',
+    },
   ]
   return (
-    <main className="w-screen flex justify-center">
+    <main className="w-screen flex mx-auto p-2 md:max-w-[1200px]">
       <div className="w-full px-2 break-words space-y-6 py-4">
         <section className="justify-center flex w-full">
           <Image
@@ -54,7 +61,7 @@ export default function Home() {
         <Card className="flex items-center justify-between p-6 flex-wrap gap-2 w-full">
           <div className="space-y-2">
             <h1 className="text-2xl font-bold break-words">
-              XV JORNADA ODONTOLÓGICA DE SANTOS
+              XVI JORNADA ODONTOLÓGICA DE SANTOS
             </h1>
             <span className="text-xs text-muted-foreground flex gap-2 items-center">
               <Calendar /> 23/10/2023 – 25/10/2023 - 09:00 - 22:00 GMT-3
@@ -140,6 +147,12 @@ export default function Home() {
             </Button>
           </div>
         </Card>
+        <Link
+          className="text-sm text-muted-foreground text-center"
+          href={'/auth/sign-in'}
+        >
+          Admin login
+        </Link>
       </div>
     </main>
   )
