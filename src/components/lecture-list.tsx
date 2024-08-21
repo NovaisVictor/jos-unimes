@@ -20,9 +20,44 @@ export function LectureList() {
           name="Hipersensibilidade Dentinária e o Papel dos Cremes Dentais Dessensibilizantes"
           time="09:00"
         />
+        <Separator />
+        <Lecture
+          name="Restaurações estéticas: Resina ou porcelana?"
+          time="09:00"
+        />
       </TabsContent>
-      <TabsContent value="day-2">Change your password here.</TabsContent>
-      <TabsContent value="day-3">Change your password here.</TabsContent>
+      <TabsContent value="day-2" className="space-y-5 mt-4">
+        <Lecture
+          name="Dominando os 04 principais Elementos da Gestão Odontológica"
+          time="09:00"
+        />
+        <Separator />
+        <Lecture
+          name="Hipersensibilidade Dentinária e o Papel dos Cremes Dentais Dessensibilizantes"
+          time="09:00"
+        />
+        <Separator />
+        <Lecture
+          name="Restaurações estéticas: Resina ou porcelana?"
+          time="09:00"
+        />
+      </TabsContent>
+      <TabsContent value="day-3" className="space-y-5 mt-4">
+        <Lecture
+          name="Dominando os 04 principais Elementos da Gestão Odontológica"
+          time="09:00"
+        />
+        <Separator />
+        <Lecture
+          name="Hipersensibilidade Dentinária e o Papel dos Cremes Dentais Dessensibilizantes"
+          time="09:00"
+        />
+        <Separator />
+        <Lecture
+          name="Restaurações estéticas: Resina ou porcelana?"
+          time="09:00"
+        />
+      </TabsContent>
     </Tabs>
   )
 }

@@ -1,8 +1,9 @@
 'use server'
 import { z } from 'zod'
 import { cpf } from 'cpf-cnpj-validator'
-import { SendEmailTicket } from '@/utils/send-mail'
 import { prisma } from '@/lib/prisma'
+import { createCustomerAsaas } from '@/http/create-customer-asaas'
+import { createChargeAsaas } from '@/http/create-charge-asaas'
 
 const subscriptionSchema = z
   .object({
@@ -37,19 +38,39 @@ export async function subscriptionAction(data: FormData) {
   const { name, email, phone, cpf, semester, period } = result.data
 
   try {
-    const { id } = await prisma.viewer.create({
-      data: {
-        name,
-        email,
-        phone,
+    const user = await prisma.viewer.findFirst({
+      where: {
         cpf,
-        semester,
-        period,
-        paymentStatus: false,
-        checkIn: false,
       },
     })
-    await SendEmailTicket({ id, name, email })
+
+    if (!user) {
+      const { id } = await createCustomerAsaas({
+        name,
+        cpfCnpj: cpf,
+        email,
+      })
+      await prisma.viewer.create({
+        data: {
+          name,
+          customerId: id,
+          email,
+          phone,
+          cpf,
+          semester,
+          period,
+          paymentStatus: false,
+          checkIn: false,
+        },
+      })
+      await createChargeAsaas(id)
+    } else {
+      return {
+        success: false,
+        message: 'Você já criou uma cobrança.',
+        errors: null,
+      }
+    }
   } catch (err) {
     console.log(err)
     return {

@@ -16,16 +16,17 @@ export async function SendEmailTicket({
   id,
 }: SendEmailTicketRequest) {
   const transporter = nodemailer.createTransport({
-    host: 'smtp.ethereal.email',
+    host: 'smtp.gmail.com',
     port: 587,
     secure: false,
+    requireTLS: true,
     auth: {
-      user: 'camryn48@ethereal.email',
-      pass: 'gN8dHNzttYe4WMHcHs',
+      user: process.env.GMAIL_USER,
+      pass: process.env.GMAIL_PASSWORD,
     },
   })
 
-  const url = await new Promise((resolve, reject) => {
+  const url: string = await new Promise((resolve, reject) => {
     QRCode.toDataURL(
       `${env.NEXT_PUBLIC_URL}/dashboard/qrcode/${id}`,
       function (err, url) {
@@ -37,8 +38,9 @@ export async function SendEmailTicket({
       },
     )
   })
+  console.log(url)
   const info = await transporter.sendMail({
-    from: '"Maddison Foo Koch 👻" <maddison53@ethereal.email>',
+    from: 'jpshioya12@gmail.com',
     to: email,
     subject: 'Inscrição Realizada!',
     html: `
@@ -50,17 +52,21 @@ export async function SendEmailTicket({
           <div class="space-y-4 bg-blue-950 text-white p-12 text-lg rounded-md">
             <p>Olá ${name}</p>
             <p class="font-bold">
-              Sua inscrição foi realizada, mas faltam alguns passos para confirma-la
+              Sua inscrição foi realizada, e seu pagamento foi confirmado!
             </p>
-            <p>Realize o pagamento via pix: </p>
-            <div>QR Code</div>
-            <p>chave pix</p>
-            <p class="font-bold">Esse é seu ingresso para entrada no evento</p>
-            <div><img src="${url}"></div>
+            <p class="font-bold">Esse é seu ingresso para entrar no evento</p>
+            <div><img src="cid:unique@nodemailer.com"></div>
           </div>
         </body>
       </html>
     `,
+    attachments: [
+      {
+        filename: 'ticket.png',
+        path: url,
+        cid: 'unique@nodemailer.com', // unique CID matching the img src in HTML
+      },
+    ],
   })
 
   console.log('Message sent: %s', info.messageId, info.response)

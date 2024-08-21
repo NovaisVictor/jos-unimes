@@ -11,11 +11,8 @@ export async function middleware(req: NextRequest) {
   }
 
   try {
-    const { payload } = await jwtVerify(
-      token,
-      new TextEncoder().encode(env.JWT_SECRET!),
-    )
-    console.log(payload)
+    await jwtVerify(token, new TextEncoder().encode(env.JWT_SECRET!))
+    // console.log(payload)
   } catch (err) {
     console.error('Token inválido:', err)
     return NextResponse.redirect(`${env.NEXT_PUBLIC_URL}/auth/sign-in`)

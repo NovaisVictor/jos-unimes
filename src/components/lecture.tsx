@@ -15,7 +15,7 @@ interface LectureProps {
 export function Lecture({ name, time }: LectureProps) {
   return (
     <Dialog>
-      <DialogTrigger className="flex justify-between text-balance text-start flex-wrap w-full gap-2 bg-primary/20 rounded-sm p-1">
+      <DialogTrigger className="flex justify-between text-balance text-start flex-wrap w-full gap-2 bg-primary/10 rounded-sm p-3">
         <p className="font-bold">{name}</p>
         <p className="text-muted-foreground">{time}</p>
       </DialogTrigger>

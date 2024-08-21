@@ -1,4 +1,5 @@
 'use client'
+
 import { getViewers } from './actions'
 import { columns } from './colums'
 import { ViewersTable } from './viewers-table'
@@ -21,7 +22,7 @@ export default function App() {
   }
 
   return (
-    <main className="h-screen flex justify-center items-center">
+    <main className="h-screen flex justify-center items-center max-w-[1200px] mx-auto">
       <ViewersTable columns={columns} data={data} />
     </main>
   )

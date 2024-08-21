@@ -76,7 +76,7 @@ export default function Home() {
         </Card>
         <Card className="space-y-2 p-6 text-center w-full">
           <h1 className="text-2xl font-bold">
-            XV JORNADA ODONTOLOGICA DE SANTOS
+            XVI JORNADA ODONTOLOGICA DE SANTOS
           </h1>
           <p>
             A finalidade da JOS é agregar conhecimento científico, sobremaneira
@@ -106,7 +106,7 @@ export default function Home() {
 
         <Card className="space-y-8 flex flex-col items-center p-6 w-full">
           <div>
-            <h1 className="text-2xl font-bold">Speakers</h1>
+            <h1 className="text-2xl font-bold">Palestrantes</h1>
           </div>
           <div className="flex flex-wrap gap-20 justify-center w-2/3">
             {speakers.map((speaker) => {
@@ -147,12 +147,14 @@ export default function Home() {
             </Button>
           </div>
         </Card>
-        <Link
-          className="text-sm text-muted-foreground text-center"
-          href={'/auth/sign-in'}
-        >
-          Admin login
-        </Link>
+        <div className="mx-auto flex justify-center">
+          <Link
+            className="text-sm text-muted-foreground text-center"
+            href={'/auth/sign-in'}
+          >
+            Admin login
+          </Link>
+        </div>
       </div>
     </main>
   )
