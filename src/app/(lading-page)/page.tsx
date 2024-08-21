@@ -59,15 +59,15 @@ export default function Home() {
           />
         </section>
         <Card className="flex items-center justify-between p-6 flex-wrap gap-2 w-full">
-          <div className="space-y-2">
+          <div className="space-y-4">
             <h1 className="text-2xl font-bold break-words">
               XVI JORNADA ODONTOLÓGICA DE SANTOS
             </h1>
             <span className="text-xs text-muted-foreground flex gap-2 items-center">
-              <Calendar /> 23/10/2023 – 25/10/2023 - 09:00 - 22:00 GMT-3
+              <Calendar /> 21/10/2024 – 23/10/2024 - 09:00 - 22:00 GMT-3
             </span>
             <span className="text-xs text-muted-foreground flex gap-2 items-center">
-              <MapPin /> 23/10/2023 – 25/10/2023 - 09:00 - 22:00 GMT-3
+              <MapPin /> Unimes - Santos/SP
             </span>
           </div>
           <div>
