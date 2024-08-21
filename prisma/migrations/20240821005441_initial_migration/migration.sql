@@ -14,6 +14,7 @@ CREATE TABLE "User" (
 -- CreateTable
 CREATE TABLE "Viewer" (
     "id" TEXT NOT NULL,
+    "customerId" TEXT NOT NULL,
     "name" TEXT NOT NULL,
     "email" TEXT NOT NULL,
     "phone" TEXT,
@@ -34,6 +35,9 @@ CREATE UNIQUE INDEX "User_email_key" ON "User"("email");
 
 -- CreateIndex
 CREATE UNIQUE INDEX "User_username_key" ON "User"("username");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "Viewer_customerId_key" ON "Viewer"("customerId");
 
 -- CreateIndex
 CREATE UNIQUE INDEX "Viewer_cpf_key" ON "Viewer"("cpf");
