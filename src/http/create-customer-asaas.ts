@@ -43,6 +43,7 @@ export async function createCustomerAsaas({
         name,
         cpfCnpj,
         email,
+        notificationDisabled: true,
       },
     })
     .json<CreateCustomerAsaasResponse>()
