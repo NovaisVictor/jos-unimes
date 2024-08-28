@@ -11,52 +11,91 @@ export function LectureList() {
         <TabsTrigger value="day-3">Dia 3</TabsTrigger>
       </TabsList>
       <TabsContent value="day-1" className="space-y-5 mt-4">
+        <Lecture name="????" time="09:00" palestrante="Laercio" />
+        <Separator />
         <Lecture
-          name="Dominando os 04 principais Elementos da Gestão Odontológica"
-          time="09:00"
+          name="RESTAURAÇÕES ESTÉTICAS: RESINA OU PORCELANA?"
+          time="10:30"
+          palestrante="Prof Dr Willian Gomes"
         />
         <Separator />
         <Lecture
-          name="Hipersensibilidade Dentinária e o Papel dos Cremes Dentais Dessensibilizantes"
-          time="09:00"
+          name="As possibilidades do Digital na PT"
+          time="14:00"
+          palestrante="Profa Dra Bárbara Romano"
         />
         <Separator />
         <Lecture
-          name="Restaurações estéticas: Resina ou porcelana?"
-          time="09:00"
+          name="Protocolos clínicos preventivos e minimamente invasivos - evidência na prática clínica"
+          time="16:00"
+          palestrante="Profa. Dra. Sandra Kalil Bussadori."
         />
+        <Separator />
+        <Lecture palestrante="Colgate" name="Colgate" time="19:00" />
+        <Separator />
+        <Lecture palestrante="Bio Fx" name="Bio Fx" time="20:30" />
       </TabsContent>
       <TabsContent value="day-2" className="space-y-5 mt-4">
         <Lecture
           name="Dominando os 04 principais Elementos da Gestão Odontológica"
           time="09:00"
+          palestrante="Dr Bruno Montezano"
         />
         <Separator />
+        <Lecture name="Dra Denise" time="10:30" palestrante="Dra Denise" />
+        <Separator />
         <Lecture
+          palestrante="Dra Gheyza Torres"
+          name="O impacto da Harmonização Orofacial nó gerenciamento do envelhecimento"
+          time="14:00"
+        />
+        <Separator />
+        <Lecture palestrante="Dr Andrey Ortiz" name="?" time="16:00" />
+        <Separator />
+        <Lecture
+          palestrante="Nohana Caruso com apoio Sensodyne"
           name="Hipersensibilidade Dentinária e o Papel dos Cremes Dentais Dessensibilizantes"
-          time="09:00"
+          time="19:00"
         />
         <Separator />
         <Lecture
-          name="Restaurações estéticas: Resina ou porcelana?"
-          time="09:00"
+          palestrante="Dr Caio Capitani"
+          name="Protetores Faciais Esportivos"
+          time="20:30"
         />
       </TabsContent>
       <TabsContent value="day-3" className="space-y-5 mt-4">
         <Lecture
-          name="Dominando os 04 principais Elementos da Gestão Odontológica"
+          name="Saúde oral itop - mitos e verdades"
           time="09:00"
+          palestrante="Dr Maurício Matson com apoio Curaprox"
         />
         <Separator />
         <Lecture
-          name="Hipersensibilidade Dentinária e o Papel dos Cremes Dentais Dessensibilizantes"
-          time="09:00"
+          name="amiga do Rui??????"
+          time="10:30"
+          palestrante="amiga do Rui??????"
         />
         <Separator />
         <Lecture
-          name="Restaurações estéticas: Resina ou porcelana?"
-          time="09:00"
+          palestrante="ADVOGADA ACDBS???"
+          name="ADVOGADA ACDBS???"
+          time="14:00"
         />
+        <Separator />
+        <Lecture
+          palestrante="Dr Yuri Kalinin"
+          name="A Estomatologia no SUS"
+          time="16:00"
+        />
+        <Separator />
+        <Lecture
+          palestrante="Jeferson Orofino Costa com apoio Lumax"
+          name="Tomografia na Prática - Workshop"
+          time="19:00"
+        />
+        <Separator />
+        <Lecture palestrante="Dr Fued" name="Dr Fued" time="20:30" />
       </TabsContent>
     </Tabs>
   )
