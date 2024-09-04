@@ -144,20 +144,19 @@ export default function Home() {
           <h1 className="text-2xl font-bold">
             XVI JORNADA ODONTOLOGICA DE SANTOS
           </h1>
-          <p>
+          <p className="text-justify">
             A finalidade da JOS é agregar conhecimento científico, sobremaneira
             aos acadêmicos, despertando, desta forma, o interesse por assuntos
             que vão além da sala de aula. Além de gerar discussões sobre o
             futuro da Odontologia e suas atualidades. Os congressistas tem a
             oportunidade de assistir a palestras com renomados nomes da
             Odontologia nacional e internacional e também de apresentar
-            trabalhos científicos nas modalidades painel e apresentação oral.
-            Todos os anos novas tecnologias surgem no mercado de trabalho
-            otimizando as práticas do Cirurgião Dentista e possibilitando uma
-            reabilitação mais eficaz e resiliente ao paciente. Além do viés
-            científico, também atuamos na frente social, oferecendo atendimento
-            gratuito à população, diminuindo, portanto, as filas do Sistema
-            Único de Saúde.
+            trabalhos científicos na modalidade de apresentação oral. Todos os
+            anos novas tecnologias surgem no mercado de trabalho otimizando as
+            práticas do Cirurgião Dentista e possibilitando uma reabilitação
+            mais eficaz e resiliente ao paciente. Além do viés científico,
+            também atuamos na frente social, oferecendo atendimento gratuito à
+            população, diminuindo, portanto, as filas do Sistema Único de Saúde.
           </p>
         </Card>
 
