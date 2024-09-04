@@ -16,7 +16,7 @@ export function LectureList() {
         <Lecture
           name="RESTAURAÇÕES ESTÉTICAS: RESINA OU PORCELANA?"
           time="10:30"
-          palestrante="Prof Dr Willian Gomes"
+          palestrante="Prof Dr Willian Gomes - apoio  Ultradent."
         />
         <Separator />
         <Lecture
@@ -33,7 +33,11 @@ export function LectureList() {
         <Separator />
         <Lecture palestrante="Colgate" name="Colgate" time="19:00" />
         <Separator />
-        <Lecture palestrante="Bio Fx" name="Bio Fx" time="20:30" />
+        <Lecture
+          palestrante="Dr Leonardo Betolaxi e Rafaella Alencar - apoio Bio Fx"
+          name="Tomografia Computadorizada: Um caminho para a Excelência na Odontologia."
+          time="20:30"
+        />
       </TabsContent>
       <TabsContent value="day-2" className="space-y-5 mt-4">
         <Lecture
@@ -53,6 +57,12 @@ export function LectureList() {
         <Lecture palestrante="Dr Andrey Ortiz" name="?" time="16:00" />
         <Separator />
         <Lecture
+          palestrante="Dr Caio Borelli Zeller"
+          name="Importância e Vantagens para os Cirurgiões Dentistas nas Entidades Associativas"
+          time="18:40"
+        />
+        <Separator />
+        <Lecture
           palestrante="Nohana Caruso com apoio Sensodyne"
           name="Hipersensibilidade Dentinária e o Papel dos Cremes Dentais Dessensibilizantes"
           time="19:00"
@@ -68,18 +78,18 @@ export function LectureList() {
         <Lecture
           name="Saúde oral itop - mitos e verdades"
           time="09:00"
-          palestrante="Dr Maurício Matson com apoio Curaprox"
+          palestrante="Dr Maurício Matson - apoio Curaprox"
         />
         <Separator />
         <Lecture
-          name="amiga do Rui??????"
+          name="Dra Maria Esperança"
           time="10:30"
-          palestrante="amiga do Rui??????"
+          palestrante="Avanços tecnológicos na Endodontia"
         />
         <Separator />
         <Lecture
-          palestrante="ADVOGADA ACDBS???"
-          name="ADVOGADA ACDBS???"
+          palestrante="Dra Isabela Castro"
+          name="Importância do Seguro de Responsabilidade Civil e Lei Geral de Proteção de Dados na Odontologia"
           time="14:00"
         />
         <Separator />
@@ -90,12 +100,16 @@ export function LectureList() {
         />
         <Separator />
         <Lecture
-          palestrante="Jeferson Orofino Costa com apoio Lumax"
+          palestrante="Jeferson Orofino Costa - apoio Lumax"
           name="Tomografia na Prática - Workshop"
           time="19:00"
         />
         <Separator />
-        <Lecture palestrante="Dr Fued" name="Dr Fued" time="20:30" />
+        <Lecture
+          palestrante="Dr Fued"
+          name="Estratégia Terapêutica em Cirurgia Oral"
+          time="20:30"
+        />
       </TabsContent>
     </Tabs>
   )

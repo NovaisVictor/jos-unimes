@@ -16,9 +16,12 @@ interface LectureProps {
 export function Lecture({ name, time, palestrante }: LectureProps) {
   return (
     <Dialog>
-      <DialogTrigger className="flex justify-between text-balance text-start flex-wrap w-full gap-2 bg-primary/10 rounded-sm p-3">
+      <DialogTrigger className="flex flex-col justify-between text-balance text-start flex-wrap w-full gap-2 bg-primary/10 rounded-sm p-3">
         <p className="font-bold">{name}</p>
-        <p className="text-muted-foreground">{time}</p>
+        <div className="flex justify-between w-full">
+          <p className="text-muted-foreground">{time}</p>
+          <p className="text-muted-foreground">{palestrante}</p>
+        </div>
       </DialogTrigger>
 
       <DialogContent className="max-w-[350px] rounded-md">

@@ -45,6 +45,72 @@ export default function Home() {
       curriculum:
         'Desde abril de 2024 atua como Secretário Adjunto da Secretaria de Saúde Pública de Praia Grande. Anteriormente, atuou como Secretário Adjunto da Subsecretaria de Atenção à Saúde entre junho de 2022 e abril de 2024. Cirurgião-dentista e estomatologista da Prefeitura de Praia Grande desde 2016, graduou-se em Odontologia pela Universidade Metodista de São Paulo em 2013, especialista em Estomatologia pelo Hospital Heliópolis (2016-2018), possui habilitação em Laserterapia pelo LELO-FOUSP (2022). Em 2024, tornou-se especialista em Gestão Pública em Saúde (Unicamp) e atualmente é pós-graduando em Saúde Pública pela Faculdade de Saúde Pública da USP (2024-2026). Membro ativo da Sociedade Brasileira de Estomatologia e Patologia Oral (SOBEP), integra a Câmara Técnica de Estomatologia e a Comissão de Políticas Públicas do CROSP. Também é membro do Grupo de Trabalho de Câncer da Coordenação-Geral de Saúde Bucal do Ministério da Saúde.',
     },
+    {
+      name: 'Maurício Matson',
+      description: 'Secretário Adjunto',
+      src: './mauricio.jpeg',
+      curriculum: '',
+    },
+    {
+      name: 'Dra Sandra Kalil',
+      description: 'Secretário Adjunto',
+      src: './sandra.jpeg',
+      curriculum: '',
+    },
+    {
+      name: 'Dr Jeferson Orofino',
+      description: 'Secretário Adjunto',
+      src: './jeferson.jpeg',
+      curriculum: '',
+    },
+    {
+      name: 'Dra Gheyza Torres',
+      description: 'Secretário Adjunto',
+      src: './gheyza.jpeg',
+      curriculum: '',
+    },
+    {
+      name: 'Dr Caio Capitani',
+      description: 'Secretário Adjunto',
+      src: './caio.jpeg',
+      curriculum: '',
+    },
+    {
+      name: 'Dr Caio Borelli Zeller',
+      description: 'Secretário Adjunto',
+      src: './caiob.jpeg',
+      curriculum: '',
+    },
+    {
+      name: 'Dr Leonardo Betolaxi',
+      description: 'Secretário Adjunto',
+      src: './leonardo.jpeg',
+      curriculum: '',
+    },
+    {
+      name: ' Rafaella Alencar',
+      description: 'Secretário Adjunto',
+      src: './rafaella.png',
+      curriculum: '',
+    },
+    {
+      name: 'Dra Maria Esperança',
+      description: 'Secretário Adjunto',
+      src: './maria.jpeg',
+      curriculum: '',
+    },
+    {
+      name: 'Dra Isabela Castro',
+      description: 'Secretário Adjunto',
+      src: './isabela.jpeg',
+      curriculum: '',
+    },
+    {
+      name: 'Dr Fued',
+      description: 'Secretário Adjunto',
+      src: './feud.jpeg',
+      curriculum: '',
+    },
   ]
   return (
     <main className="w-screen flex mx-auto p-2 md:max-w-[1200px]">
