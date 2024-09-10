@@ -29,7 +29,7 @@ export default function Home() {
       description: 'Dentista, Gestor e Professor,',
       src: './bruno.jpg',
       curriculum:
-        'Sou dentista, gestor e professor, apaixonado por gestão. Há mais de 3 anos tenho uma atuação focada em precificação de serviços odontológicos. Ao longo dos últimos anos, tive o privilégio de trabalhar em diversos ramos da Odontologia, passando por vários setores, tendo uma visão 360º do mercado odontológico. A partir disso criei o método  C.O.G.I.D.I, o qual hoje consigo ajudar diversas clínicas odontológicas a alcançarem seu potencial máximo. Meu objetivo é impulsionar seu crescimento e sucesso, fornecendo estratégias sólidas, otimização de precificação e uma visão abrangente do mercado odontológico.',
+        'Odontologia Unisanta - 2019 Residência Multiprofissional em Saúde da Família e Comunidade - 2022 Diretor Clínico da Clínica La Sorrie - 2022  Professor na Alapos - ASB e TSB - Desde 2018 Gerente Comercial Dental Parâmetro  - 2023 Sou dentista, gestor e professor, apaixonado por gestão. Há mais de 3 anos tenho uma atuação focada em precificação de serviços odontológicos. Ao longo dos últimos anos, tive o privilégio de trabalhar em diversos ramos da Odontologia, passando por vários setores, tendo uma visão 360º do mercado odontológico. A partir disso criei o método  C.O.G.I.D.I, o qual hoje consigo ajudar diversas clínicas odontológicas a alcançarem seu potencial máximo. Meu objetivo é impulsionar seu crescimento e sucesso, fornecendo estratégias sólidas, otimização de precificação e uma visão abrangente do mercado odontológico.',
     },
     {
       name: 'Nohana',
@@ -43,73 +43,84 @@ export default function Home() {
       description: 'Secretário Adjunto',
       src: './yuri.jpeg',
       curriculum:
-        'Desde abril de 2024 atua como Secretário Adjunto da Secretaria de Saúde Pública de Praia Grande. Anteriormente, atuou como Secretário Adjunto da Subsecretaria de Atenção à Saúde entre junho de 2022 e abril de 2024. Cirurgião-dentista e estomatologista da Prefeitura de Praia Grande desde 2016, graduou-se em Odontologia pela Universidade Metodista de São Paulo em 2013, especialista em Estomatologia pelo Hospital Heliópolis (2016-2018), possui habilitação em Laserterapia pelo LELO-FOUSP (2022). Em 2024, tornou-se especialista em Gestão Pública em Saúde (Unicamp) e atualmente é pós-graduando em Saúde Pública pela Faculdade de Saúde Pública da USP (2024-2026). Membro ativo da Sociedade Brasileira de Estomatologia e Patologia Oral (SOBEP), integra a Câmara Técnica de Estomatologia e a Comissão de Políticas Públicas do CROSP. Também é membro do Grupo de Trabalho de Câncer da Coordenação-Geral de Saúde Bucal do Ministério da Saúde.',
+        ': Possui graduação em Odontologia pela Universidade Metodista de São Paulo (2013) aprimoramento em Odontologia, Estomatologia e Oncologia pela Universidade Metodista de São Paulo (2016), cursou Especialização de Estomatologia pelo Centro de Estudos e Pesquisa em Estomatologia "Prof. Dr. Gilberto Marcucci" - Hospital Heliópolis (2018), Habilitação em Laserterapia pela Fundação para o Desenvolvimento Científico e Tecnológico da Odontologia - FUNDECTO USP (2022). Especialização em Gestão Pública em Saúde - Unicamp (2024). Foi professor voluntário da Universidade Metodista de São Paulo nas disciplinas de Diagnóstico Bucal e Estomatologia. Atualmente é cirurgião dentista da Prefeitura Municipal da Estância Balneária de Praia Grande, onde atua como clínico geral e estomatologista. Atua também como preceptor no estágio rotativo do Serviço de Estomatologia do Programa de Residência Multiprofissional em Saúde de Família e Comunidade da Prefeitura Municipal da Estância Balneária de Praia Grande. Foi nomeado Secretário Adjunto da Subsecretaria de Atenção à Saúde de Praia Grande, onde está atuando em Gestão em Saúde Pública desde julho de 2022, em abril de 2024 foi nomeado Secretário Adjunto de Saúde Pública, onde está atuando até então. Tem experiência na área de Odontologia, com ênfase em Estomatologia, Saúde Pública, Gestão e SUS.',
     },
     {
       name: 'Maurício Matson',
       description: 'Secretário Adjunto',
       src: './mauricio.jpeg',
-      curriculum: '',
+      curriculum:
+        'Mestre em clínica integrada pela universidade de São Paulão (FOUSP) Doutor em dentistica pela universidade de São Paulo (FOUSP) Instrutor de filosofia individually training oral prophylaxis-ITOP Implantodontista pela APCD São Bernardo do Campo',
     },
     {
       name: 'Dra Sandra Kalil',
       description: 'Secretário Adjunto',
       src: './sandra.jpeg',
-      curriculum: '',
+      curriculum:
+        'Possui graduação em Odontologia pela Universidade Santo Amaro (1988), Especialização em Odontopediatria pela UNISA (1992), Mestrado em Odontologia (Materiais Dentários) pela Universidade de São Paulo (1997) e Doutorado em Ciências Odontológicas pela Universidade de São Paulo (2001) e Pós-Doutorado em Pediatria pela UNIFESP/SP (2009). Atualmente, é professora dos Programas de Mestrado e Doutorado e Pós Doutorado Medicina em Biofotônica (Conceito 6 CAPES) e em Ciências da Reabilitação (Conceito 6 CAPES). É professora Titular-UNINOVE, professora titular da Universidade Metropolitana de Santos. Presidente da Associação Brasileira de Odontopediatria e Diretora Científica da Associação Paulista de Odontopediatria. Pesquisadora e Docente do curso de medicina com atuação nas unidades curriculares de Conhecimento Científico, Tecnológico e Inovação em Saúde, além da orientação de estudantes em iniciação científica. Tem experiência nas áreas de Fotobiomodulação (é a segunda maior produção mundial na web of science no tema);Terapia Fotodinâmica antimicrobiana (aPDT), Reabilitação do Sistema Estomatognático em crianças e adolescentes por meio de Ensaios Clínicos Controlados com ênfase em Halitose, Doença cárie, Disfunção Temporomandibular, Contatos Oclusais, Bruxismo e Postura. Odontologia com ênfase em Materiais Odontológicos, Novas Tecnologias e Mínima Intervenção, Remoção Química e Mecânica do tecido cariado, cimentos de ionômero de vidro e fitocompostos. Inventora do Papacárie e Detentora da Patente Nacional e Internacional.Orientadora de Mestrado, Doutorado e Supervisora de Pós Doutorado. Revisora de periódicos internacionais e nacionais e de diferentes órgãos de Fomento à Pesquisa (Fapesp, CNPq, Capes)',
     },
     {
       name: 'Dr Jeferson Orofino',
       description: 'Secretário Adjunto',
       src: './jeferson.jpeg',
-      curriculum: '',
+      curriculum:
+        'Cirurgião dentista pela universidade de Marília Pós graduado em endodontia pela APCD- Bauru Pós graduado em radiologia odontológica pela USF- Bragança Paulista Pós graduação em administração - Fundação Armando Alvares Penteado Diretor, sócio-proprietário, do centro radiológico Papaiz',
     },
     {
       name: 'Dra Gheyza Torres',
       description: 'Secretário Adjunto',
       src: './gheyza.jpeg',
-      curriculum: '',
+      curriculum:
+        'Professora da Pós - Graduação em Harmonização Orofacial - UNIMES Professora da Especialização em Harmonização Orofacial - ABO Professora da Especialização em Harmonização Orofacial - FACOP Mestra em Ciências e Tecnologia da Saúde - UMC Área de concentração: Utilização da Laserterapia pós preenchimento facial com Ácido Hialurônico Especialista em Harmonização Orofacial - FACOP Especialista em Ortodontia - ABO SANTOS Especialista em Odontologi a Legal - USP Perita Judicial Especialista em Prótese - APCD Auditora formada pela - USP Curso aris university',
     },
     {
       name: 'Dr Caio Capitani',
       description: 'Secretário Adjunto',
       src: './caio.jpeg',
-      curriculum: '',
+      curriculum:
+        'Formado em Odontologia pela UNISANTA Especialista em Ortodontia e Ortopedia Facial pela UNISANTA Especialista em Ciencias do Esporte pela UNIFESP Especialista em Odontologia do Esporte pela Universidade Positivo de Curitiba Diploma em Medicina do Futebol pela FIFA Mestrado em Direito da Saude pela Unisanta Dentista do Esporte - Instituto Implante Vida Dentista Parceiro do Santos Futebol Clube Membro da Camara Tecnica de Odontologia do Esporte do CROSP Sócio Fundador da MaxilGuard - Protetores Faciais Esportivos',
     },
     {
       name: 'Dr Caio Borelli Zeller',
       description: 'Secretário Adjunto',
       src: './caiob.jpeg',
-      curriculum: '',
+      curriculum:
+        'Dr. Caio Borelli Zeller - Graduado em Odontologia pela Universidade Santa Cecilia. Especialização em Periodontia na Associação Brasileira de Odontologia, Pós Graduado em Auditoria da Saúde pela Universidade de São Paulo. Presidente do Projeto Social ONG Dentista para Todos e Diretor de Comunicação da ACDBS Associação Cirurgiões Dentistas da Baixada Santista',
     },
     {
       name: 'Dr Leonardo Betolaxi',
       description: 'Secretário Adjunto',
       src: './leonardo.jpeg',
-      curriculum: '',
+      curriculum:
+        'Graduado em odontologia pela UMESP; Pós em Radiologia e Imagenologia pela SL Mandic; Pós em Estomatologia SL Mandic Tomografia computadorizada pela Fundecto-Usp Ortodontia pelo ITOO Santo André MBA Gestão de negócios da Saúde Instrutor de treinamentos comportamentais pelo instituto Napoleon Hill Prof de radiologia odontológica para implantodontia da ABO Santos',
     },
     {
       name: ' Rafaella Alencar',
       description: 'Secretário Adjunto',
       src: './rafaella.png',
-      curriculum: '',
+      curriculum:
+        'Especialista em Radiologia e Imaginologia Odontológica Especialista em Endodontia Mentorada – Dr Felipe Costa e Dr Lucas Pinheiro Radiologista responsável nas clínicas Biofx',
     },
     {
       name: 'Dra Maria Esperança',
       description: 'Secretário Adjunto',
       src: './maria.jpeg',
-      curriculum: '',
+      curriculum:
+        'Possui graduação em Odontologia pela Universidade de Mogi das Cruzes (1980) e mestrado em Odontologia pela Universidade Paulista (2002). Atualmente é professora da disciplina de Endodontia na graduação da Universidade Anhanguera de São Paulo e Especializaçào Na FUNORTE Núcleo Manaus; FAOA São Paulo e UNIMES em Santos. Atua em Consultório Particular. Tem experiência na área de Odontologia, com ênfase em Endodontia; Cirurgia endodôntica e Microscopia operatória',
     },
     {
       name: 'Dra Isabela Castro',
       description: 'Secretário Adjunto',
       src: './isabela.jpeg',
-      curriculum: '',
+      curriculum:
+        'Advogada, Conselheira Estadual da OAB SP, Presidente da Comissão Permanente das Mulheres Advogadas da OAB SP, Palestrante do CROSP e Diretora Jurídica da ACDBS',
     },
     {
       name: 'Dr Fued',
       description: 'Secretário Adjunto',
       src: './feud.jpeg',
-      curriculum: '',
+      curriculum:
+        'Diretor da "Oral Face Care" - Especialista em Cirurgia Maxilo Facial pela USP-SP - Membro Titular do Colégio Brasileiro de Cirurgia e Traumatologia Buco Maxilo Facial - Doutor em Cirurgia Maxilo Facial pela Faculdade de Odontologia da UNESP - Araraquara - Residência em Cirurgias da ATM - Pacific Clinical Research & Foundation, Estados Unidos - Coordenador do Serviço de Cirurgia e Traumatologia Buco Maxilo Facial do Hospital Casa de Saúde - Santos',
     },
   ]
   return (
@@ -145,18 +156,19 @@ export default function Home() {
             XVI JORNADA ODONTOLOGICA DE SANTOS
           </h1>
           <p className="text-justify">
-            A finalidade da JOS é agregar conhecimento científico, sobremaneira
-            aos acadêmicos, despertando, desta forma, o interesse por assuntos
-            que vão além da sala de aula. Além de gerar discussões sobre o
-            futuro da Odontologia e suas atualidades. Os congressistas tem a
-            oportunidade de assistir a palestras com renomados nomes da
-            Odontologia nacional e internacional e também de apresentar
-            trabalhos científicos na modalidade de apresentação oral. Todos os
-            anos novas tecnologias surgem no mercado de trabalho otimizando as
-            práticas do Cirurgião Dentista e possibilitando uma reabilitação
-            mais eficaz e resiliente ao paciente. Além do viés científico,
-            também atuamos na frente social, oferecendo atendimento gratuito à
-            população, diminuindo, portanto, as filas do Sistema Único de Saúde.
+            A JOS-UNIMES (Jornada Odontológica de Santos), é um evento que
+            ocorre todos os anos, desde 1978, sendo aberto à profissionais de
+            toda a Baixada Santista. É um congresso que tem por objetivo e
+            tradição agregar conhecimento científico, sobremaneira aos
+            acadêmicos, despertando, dessa forma, o aprendizado e a amplitude da
+            Odontologia, que vão além da sala de aula. Além disso, estimula-se a
+            discussão e o desenvolvimento de senso crítico acerca dos avanços e
+            atualidades nas diversas áreas da Odontologia. Os congressistas têm
+            a oportunidade de assistir a palestras com renomados nomes da
+            Odontologia nacional e também de apresentar trabalhos científicos na
+            modalidade de apresentação oral. Estamos entusiasmados com a
+            oportunidade de promover um evento que visa aprimorar o conhecimento
+            e as habilidades dos futuros profissionais da área odontológica.
           </p>
         </Card>
 

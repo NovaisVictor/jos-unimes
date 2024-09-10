@@ -6,13 +6,13 @@ export function LectureList() {
   return (
     <Tabs defaultValue="day-1">
       <TabsList className="w-full justify-around">
-        <TabsTrigger value="day-1">Dia 1</TabsTrigger>
-        <TabsTrigger value="day-2">Dia 2</TabsTrigger>
-        <TabsTrigger value="day-3">Dia 3</TabsTrigger>
+        <TabsTrigger value="day-1">Dia 21</TabsTrigger>
+        <TabsTrigger value="day-2">22/09</TabsTrigger>
+        <TabsTrigger value="day-3">23/09</TabsTrigger>
       </TabsList>
       <TabsContent value="day-1" className="space-y-5 mt-4">
-        <Lecture name="????" time="09:00" palestrante="Laercio" />
-        <Separator />
+        {/* <Lecture name="????" time="09:00" palestrante="Laercio" /> */}
+        {/* <Separator /> */}
         <Lecture
           name="RESTAURAÇÕES ESTÉTICAS: RESINA OU PORCELANA?"
           time="10:30"
@@ -54,8 +54,8 @@ export function LectureList() {
           time="14:00"
         />
         <Separator />
-        <Lecture palestrante="Dr Andrey Ortiz" name="?" time="16:00" />
-        <Separator />
+        {/* <Lecture palestrante="Dr Andrey Ortiz" name="?" time="16:00" /> */}
+        {/* <Separator /> */}
         <Lecture
           palestrante="Dr Caio Borelli Zeller"
           name="Importância e Vantagens para os Cirurgiões Dentistas nas Entidades Associativas"

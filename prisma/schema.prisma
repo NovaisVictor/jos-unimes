@@ -17,18 +17,24 @@ model User {
   updatedAt    DateTime @updatedAt
 }
 
+enum teacherFormingEnum {
+  TEACHER
+  FORMING
+}
+
 model Viewer {
-  id            String     @id @default(uuid())
-  customerId    String     @unique
-  name          String
-  email         String
-  phone         String?
-  cpf           String     @unique
-  semester      Int
-  period        String
-  paymentStatus Boolean?   @default(false)
-  checkIn       Boolean?   @default(false)
-  checkInDates  DateTime[] @default([])
-  createdAt     DateTime   @default(now())
-  updatedAt     DateTime   @updatedAt
+  id             String             @id @default(uuid())
+  customerId     String             @unique
+  name           String
+  email          String
+  phone          String?
+  cpf            String             @unique
+  semester       Int
+  teacherForming teacherFormingEnum @default(FORMING)
+  period         String
+  paymentStatus  Boolean?           @default(false)
+  checkIn        Boolean?           @default(false)
+  checkInDates   DateTime[]         @default([])
+  createdAt      DateTime           @default(now())
+  updatedAt      DateTime           @updatedAt
 }

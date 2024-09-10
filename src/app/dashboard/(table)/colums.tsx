@@ -2,10 +2,10 @@
 import { cn } from '@/lib/utils'
 import { useMutation } from '@tanstack/react-query'
 import { ColumnDef } from '@tanstack/react-table'
-import { updatePaymentStatus } from './actions'
+import { handleDownloadQRCode, updatePaymentStatus } from './actions'
 import { queryClient } from '@/lib/react-query'
 import { Button } from '@/components/ui/button'
-import { Check } from 'lucide-react'
+import { Check, QrCode } from 'lucide-react'
 
 export type Viewer = {
   id: string
@@ -13,6 +13,7 @@ export type Viewer = {
   phone: string
   cpf: string
   semester: number
+  teacher: string
   paymentStatus: boolean
   period: string
   checkInDates: Date[]
@@ -49,6 +50,10 @@ export const columns: ColumnDef<Viewer>[] = [
   {
     accessorKey: 'period',
     header: 'Período',
+  },
+  {
+    accessorKey: 'teacher',
+    header: 'Professor/Formando(a)',
   },
 
   {
@@ -93,6 +98,32 @@ export const columns: ColumnDef<Viewer>[] = [
               Confirmar <Check className="size-5" />{' '}
             </Button>
           )}
+        </div>
+      )
+    },
+  },
+  {
+    accessorKey: 'id',
+    header: 'Gerar QR code',
+    cell: ({ row }) => {
+      return (
+        <div>
+          {/* <QRCode id="qrcode" value={link} /> */}
+          <Button
+            variant={'secondary'}
+            onClick={async () => {
+              const url = await handleDownloadQRCode(row.getValue('id'))
+              console.log(url)
+              const downloadLink = document.createElement('a')
+              downloadLink.href = url
+              downloadLink.download = 'qrcode.png'
+              document.body.appendChild(downloadLink)
+              downloadLink.click()
+              document.body.removeChild(downloadLink)
+            }}
+          >
+            <QrCode />
+          </Button>
         </div>
       )
     },

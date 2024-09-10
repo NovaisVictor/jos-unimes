@@ -1,5 +1,6 @@
 'use client'
 
+import { Loader2 } from 'lucide-react'
 import { getViewers } from './actions'
 import { columns } from './colums'
 import { ViewersTable } from './viewers-table'
@@ -14,7 +15,12 @@ export default function App() {
     },
   })
 
-  if (isLoading) return <div>Carregando...</div>
+  if (isLoading)
+    return (
+      <div className="w-screen h-screen flex items-center justify-center">
+        <Loader2 className="animate-spin" />
+      </div>
+    )
   if (isError) return <div>Error: {(error as Error).message}</div>
 
   if (!data) {
@@ -22,7 +28,7 @@ export default function App() {
   }
 
   return (
-    <main className="h-screen flex justify-center items-center max-w-[1200px] mx-auto">
+    <main className="flex justify-center items-center max-w-[1200px] mx-auto">
       <ViewersTable columns={columns} data={data} />
     </main>
   )

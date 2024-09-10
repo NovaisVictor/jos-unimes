@@ -164,6 +164,29 @@ export function SubscriptionDialog() {
                 )}
               </div>
             </div>
+            <div className="flex flex-col justify-center">
+              <div className="flex items-center justify-end gap-4">
+                <Label htmlFor="teacher" className="text-right">
+                  Professor/Formando
+                </Label>
+                <Select name="teacher" defaultValue="0">
+                  <SelectTrigger className="w-4/5">
+                    <SelectValue placeholder="Você é professor ou formando(a)?" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="forming">Formando(a)</SelectItem>
+                    <SelectItem value="teacher">Professor</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+              <div className="flex justify-end">
+                {errors?.semester && (
+                  <p className="text-xs mt-2 text-center w-4/5 font-medium text-red-500 dark:text-red-400 col-span-3">
+                    {errors.semester[0]}
+                  </p>
+                )}
+              </div>
+            </div>
           </div>
           <DialogFooter>
             <Button type="submit" disabled={isPending}>

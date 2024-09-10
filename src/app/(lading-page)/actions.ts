@@ -14,6 +14,9 @@ const subscriptionSchema = z
     phone: z.string().nullish(),
     cpf: z.string({ message: 'CPF é obrigatório' }),
     semester: z.coerce.number({ message: 'Semestre é obrigatório' }),
+    teacher: z.enum(['teacher', 'forming'], {
+      message: 'Professor/Formando é obrigatório',
+    }),
     period: z.string({ message: 'Período é obrigatório' }),
   })
   .refine(
@@ -30,12 +33,11 @@ const subscriptionSchema = z
 
 export async function subscriptionAction(data: FormData) {
   const result = subscriptionSchema.safeParse(Object.fromEntries(data))
-
   if (!result.success) {
     const errors = result.error.flatten().fieldErrors
     return { success: false, message: null, errors }
   }
-  const { name, email, phone, cpf, semester, period } = result.data
+  const { name, email, phone, cpf, semester, period, teacher } = result.data
 
   try {
     const user = await prisma.viewer.findFirst({
@@ -58,6 +60,7 @@ export async function subscriptionAction(data: FormData) {
           phone,
           cpf,
           semester,
+          teacherForming: teacher === 'forming' ? 'FORMING' : 'TEACHER',
           period,
           paymentStatus: false,
           checkIn: false,
