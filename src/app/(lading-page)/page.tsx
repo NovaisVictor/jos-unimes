@@ -154,13 +154,14 @@ export default function Home() {
             </span>
           </div>
           <div className="flex items-center gap-2">
-            <Button>
+            <Button asChild>
               <Link
                 href={
                   'https://docs.google.com/forms/d/e/1FAIpQLScPFWFyXu04vqas_4_0CTOKNpho6y0-H4-E_rOQt1nJrkQSPw/viewform?usp=sf_link'
                 }
-              />
-              Enviar trabalho ciêntifico
+              >
+                Enviar trabalho ciêntifico
+              </Link>
             </Button>
             <SubscriptionDialog />
           </div>
