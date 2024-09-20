@@ -126,7 +126,13 @@ export default function Home() {
   return (
     <main className="w-screen flex mx-auto p-2 md:max-w-[1200px]">
       <div className="w-full px-2 break-words space-y-6 py-4">
-        <section className="justify-center flex w-full">
+        <section className="justify-center flex flex-col items-center gap-4 w-full">
+          <div className="bg-secondary flex justify-end rounded-md w-full">
+            <Button variant={'link'} asChild>
+              <Link href={'/'}>Projetos Jos</Link>
+            </Button>
+          </div>
+
           <Image
             src={'/logo.png'}
             className="size-52"
@@ -147,7 +153,15 @@ export default function Home() {
               <MapPin /> Unimes - Santos/SP
             </span>
           </div>
-          <div>
+          <div className="flex items-center gap-2">
+            <Button>
+              <Link
+                href={
+                  'https://docs.google.com/forms/d/e/1FAIpQLScPFWFyXu04vqas_4_0CTOKNpho6y0-H4-E_rOQt1nJrkQSPw/viewform?usp=sf_link'
+                }
+              />
+              Enviar trabalho ciêntifico
+            </Button>
             <SubscriptionDialog />
           </div>
         </Card>
