@@ -6,9 +6,9 @@ export function LectureList() {
   return (
     <Tabs defaultValue="day-1">
       <TabsList className="w-full justify-around">
-        <TabsTrigger value="day-1">Dia 21</TabsTrigger>
-        <TabsTrigger value="day-2">22/09</TabsTrigger>
-        <TabsTrigger value="day-3">23/09</TabsTrigger>
+        <TabsTrigger value="day-1">21/10</TabsTrigger>
+        <TabsTrigger value="day-2">22/10</TabsTrigger>
+        <TabsTrigger value="day-3">23/10</TabsTrigger>
       </TabsList>
       <TabsContent value="day-1" className="space-y-5 mt-4">
         {/* <Lecture name="????" time="09:00" palestrante="Laercio" /> */}
