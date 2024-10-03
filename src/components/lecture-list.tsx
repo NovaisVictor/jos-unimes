@@ -14,6 +14,12 @@ export function LectureList() {
         {/* <Lecture name="????" time="09:00" palestrante="Laercio" /> */}
         {/* <Separator /> */}
         <Lecture
+          name="Implantodontia: Inovação, desafios e oportunidades em um mar de possibilidades"
+          time="09:00"
+          palestrante="Jasiel de Oliveira"
+        />
+        <Separator />
+        <Lecture
           name="RESTAURAÇÕES ESTÉTICAS: RESINA OU PORCELANA?"
           time="10:30"
           palestrante="Prof Dr Willian Gomes - apoio  Ultradent."
@@ -31,7 +37,17 @@ export function LectureList() {
           palestrante="Profa. Dra. Sandra Kalil Bussadori."
         />
         <Separator />
-        <Lecture palestrante="Colgate" name="Colgate" time="19:00" />
+        <Lecture
+          palestrante=""
+          name="ABERTURA OFICIAL JORNADA ODONTOLÓGICA DE SANTOS- UNIMES "
+          time="18:30"
+        />
+        <Separator />
+        <Lecture
+          palestrante="Dra Caroline Moraes"
+          name="Explorando as redes sociais para seu futuro profissional"
+          time="19:00"
+        />
         <Separator />
         <Lecture
           palestrante="Dr Leonardo Betolaxi e Rafaella Alencar - apoio Bio Fx"
@@ -46,7 +62,11 @@ export function LectureList() {
           palestrante="Dr Bruno Montezano"
         />
         <Separator />
-        <Lecture name="Dra Denise" time="10:30" palestrante="Dra Denise" />
+        <Lecture
+          name="Inteligência artificial e a Odontologia"
+          time="10:30"
+          palestrante="Dra Hellen Abreu"
+        />
         <Separator />
         <Lecture
           palestrante="Dra Gheyza Torres"
@@ -56,6 +76,7 @@ export function LectureList() {
         <Separator />
         {/* <Lecture palestrante="Dr Andrey Ortiz" name="?" time="16:00" /> */}
         {/* <Separator /> */}
+
         <Lecture
           palestrante="Dr Caio Borelli Zeller"
           name="Importância e Vantagens para os Cirurgiões Dentistas nas Entidades Associativas"
@@ -82,9 +103,9 @@ export function LectureList() {
         />
         <Separator />
         <Lecture
-          name="Dra Maria Esperança"
+          name="Avanços tecnológicos na Endodontia"
           time="10:30"
-          palestrante="Avanços tecnológicos na Endodontia"
+          palestrante="Dra Maria Esperança"
         />
         <Separator />
         <Lecture

@@ -122,6 +122,26 @@ export default function Home() {
       curriculum:
         'Diretor da "Oral Face Care" - Especialista em Cirurgia Maxilo Facial pela USP-SP - Membro Titular do Colégio Brasileiro de Cirurgia e Traumatologia Buco Maxilo Facial - Doutor em Cirurgia Maxilo Facial pela Faculdade de Odontologia da UNESP - Araraquara - Residência em Cirurgias da ATM - Pacific Clinical Research & Foundation, Estados Unidos - Coordenador do Serviço de Cirurgia e Traumatologia Buco Maxilo Facial do Hospital Casa de Saúde - Santos',
     },
+    {
+      name: 'Dra Hellen Abreu',
+      description: 'Especialista em Próteses Dentárias',
+      src: './hellen.jpeg',
+      curriculum:
+        'Especialista em Próteses Dentárias pela Unimes Mestre e Doutoranda em Implantodontia pela UNISA Professora do curso de Pós Graduação em Próteses Dentárias da UNIMES',
+    },
+    {
+      name: 'Dra Caroline Moraes',
+      description: '',
+      src: './caroline.jpeg',
+      curriculum: '',
+    },
+    {
+      name: 'Jasiel de Oliveira',
+      description: 'Sócio diretor na clínica D+odonto',
+      src: './jasiel.jpeg',
+      curriculum:
+        'Sócio diretor na clínica D+odonto (Barueri -SP), Professor Universitário UNISA, protético, especialista, mestre e doutorando em implantodontia, escritor do livro O Caderno do Dentista.',
+    },
   ]
   return (
     <main className="w-screen flex mx-auto p-2 md:max-w-[1200px]">
@@ -129,7 +149,7 @@ export default function Home() {
         <section className="justify-center flex flex-col items-center gap-4 w-full">
           <div className="bg-secondary flex justify-end rounded-md w-full">
             <Button variant={'link'} asChild>
-              <Link href={'/'}>Projetos Jos</Link>
+              <Link href={'/projects'}>Projetos Jos</Link>
             </Button>
           </div>
 
