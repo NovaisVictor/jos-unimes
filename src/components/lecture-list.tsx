@@ -74,6 +74,12 @@ export function LectureList() {
           time="14:00"
         />
         <Separator />
+        <Lecture
+          palestrante="Dr Marcelo Gaspar"
+          name="Aplicações Odontológicas dos Agregados Leucoplaquetários Autólogos (L-PRF)"
+          time="16:00"
+        />
+        <Separator />
         {/* <Lecture palestrante="Dr Andrey Ortiz" name="?" time="16:00" /> */}
         {/* <Separator /> */}
 

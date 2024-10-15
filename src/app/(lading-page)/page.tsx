@@ -142,6 +142,13 @@ export default function Home() {
       curriculum:
         'Sócio diretor na clínica D+odonto (Barueri -SP), Professor Universitário UNISA, protético, especialista, mestre e doutorando em implantodontia, escritor do livro O Caderno do Dentista.',
     },
+    {
+      name: 'Dr Marcelo Gaspar',
+      description: 'Mestre em Odontologia',
+      src: './jasiel.jpeg',
+      curriculum:
+        '-Doutorando em Implantodontia- UNISA -Mestre em Odontologia - UNIB -Especialista em Implantodontia, pela APCD,-São Bernardo do Campo -SP. -Especialista em Harmonização Orofacial IBOP / FACSETE -Coordenador do Curso de Especialização em Harmonização Orofacial USCS. -Professor do Curso de Habilitação em Venopunção. -Professor do Curso PRP e PRF - Protocolo Fibrin ®️ -Atividade clínica particular em São Bernardo do Campo - SP desde 1990.',
+    },
   ]
   return (
     <main className="w-screen flex mx-auto p-2 md:max-w-[1200px]">
