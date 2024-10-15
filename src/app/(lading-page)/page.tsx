@@ -145,7 +145,7 @@ export default function Home() {
     {
       name: 'Dr Marcelo Gaspar',
       description: 'Mestre em Odontologia',
-      src: './jasiel.jpeg',
+      src: './marcelo.jpeg',
       curriculum:
         '-Doutorando em Implantodontia- UNISA -Mestre em Odontologia - UNIB -Especialista em Implantodontia, pela APCD,-São Bernardo do Campo -SP. -Especialista em Harmonização Orofacial IBOP / FACSETE -Coordenador do Curso de Especialização em Harmonização Orofacial USCS. -Professor do Curso de Habilitação em Venopunção. -Professor do Curso PRP e PRF - Protocolo Fibrin ®️ -Atividade clínica particular em São Bernardo do Campo - SP desde 1990.',
     },
