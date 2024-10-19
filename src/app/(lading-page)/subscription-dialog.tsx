@@ -39,7 +39,7 @@ export function SubscriptionDialog() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button>Realizar inscrição</Button>
+        <Button disabled>Realizar inscrição</Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
